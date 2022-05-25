@@ -1,3 +1,9 @@
+# Equipe
+#### 1) João Olívio
+#### 2) Ricardo Magalhães
+#### 3) Vitório Baungartem
+### #Prof_Ricardo
+
 # Projeto: Conhecendo o JS
 
 Este arquivo funciona como um documento de "apresentação" do projeto.
