@@ -1,0 +1,67 @@
+PHP (um acrônimo recursivo para "PHP: Hypertext Preprocessor", originalmente Personal Home Page) é uma linguagem interpretada livre, usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado do servidor, capazes de gerar conteúdo dinâmico na World Wide Web.[3] Figura entre as primeiras linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de arquivos externos para eventuais processamentos de dados. O código é interpretado no lado do servidor pelo módulo PHP, que também gera a página web a ser visualizada no lado do cliente. A linguagem evoluiu, passou a oferecer funcionalidades em linha de comando, e além disso, ganhou características adicionais, que possibilitaram usos adicionais do PHP, não relacionados a web sites. É possível instalar o PHP na maioria dos sistemas operacionais, gratuitamente. Concorrente direto da tecnologia ASP pertencente à Microsoft, o PHP é utilizado em aplicações como o MediaWiki, Facebook, Drupal, Joomla!, WordPress, Magento e o Oscommerce.
+
+Criado por Rasmus Lerdorf em 1995, o PHP tem a produção de sua implementação principal, referência formal da linguagem, mantida por uma organização chamada The PHP Group. O PHP é software livre, licenciado sob a PHP License, uma licença incompatível com a GNU General Public License (GPL) devido a restrições no uso do termo PHP.
+
+
+Índice
+1	História
+1.1	Licença
+1.2	PHP 6 e Unicode
+1.3	Histórico de versões
+2	Principais características
+3	Exemplo 1 - Vetores e matrizes
+4	Exemplo 2 - Teste de Conexão
+5	Exemplo 3 - Teste de Login
+6	Exemplo 4 - Função Dias da Semana
+7	PHP 5
+7.1	Indução de tipo
+7.2	Visibilidade
+8	Polimorfismo
+8.1	Polimorfismo Paramétrico
+8.2	Polimorfismo por Inclusão
+8.3	Polimorfismo por Coerção
+9	Extensões
+10	Ver também
+11	Referências
+12	Bibliografia
+13	Ligações externas
+História
+A linguagem foi criada em 1994 e o código fonte do PHP só foi liberado em 1995, como um pacote de programas CGI criados por Rasmus Lerdorf, com o nome Personal Home Page Tools, para substituir um conjunto de scripts Perl que ele usava no desenvolvimento de sua página pessoal. Em 1997 foi lançado o novo pacote da linguagem com o nome de PHP/FI, trazendo a ferramenta Forms Interpreter, um interpretador de comandos SQL. Mais tarde, Zeev Suraski desenvolveu o analisador do PHP 3 que contava com o primeiro recurso de orientação a objetos, que dava poder de alcançar alguns pacotes, tinha herança e dava aos desenvolvedores somente a possibilidade de implementar propriedades e métodos.[4][5] Pouco depois, Zeev e Andi Gutmans, escreveram o PHP 4, abandonando por completo o PHP 3, dando mais poder à máquina da linguagem e maior número de recursos de orientação a objetos. O problema sério que apresentou o PHP 4 foi a criação de cópias de objetos, pois a linguagem ainda não trabalhava com apontadores ou handlers, como são as linguagens Java, Ruby e outras. O problema fora resolvido na versão 5 do PHP, que já trabalha com handlers. Caso se copie um objeto, na verdade copiaremos um apontador, pois, caso haja alguma mudança na versão original do objeto, todas as outras também sofrem a alteração, o que não acontecia na PHP 4.[6]
+
+Trata-se de uma linguagem extremamente modularizada, o que a torna ideal para instalação e uso em servidores web. Diversos módulos são criados no repositório de extensões PECL (PHP Extension Community Library) e alguns destes módulos são introduzidos como padrão em novas versões da linguagem. É muito parecida, em tipos de dados, sintaxe e mesmo funções, com a linguagem C e com a C++. Pode ser, dependendo da configuração do servidor, embarcada no código HTML. Existem versões do PHP disponíveis para os seguintes sistemas operacionais: Windows, Linux, FreeBSD, Mac OS, OS/2, AS/400, Novell Netware, RISC OS, AIX, IRIX e Solaris.
+
+Construir uma página dinâmica baseada em bases de dados é simples com PHP, (em parte, vale lembrar), este provê suporte a um grande número de bases de dados: Oracle, Sybase, PostgreSQL, InterBase, MySQL, SQLite, MSSQL, Firebird, etc., podendo abstrair o banco com a biblioteca ADOdb, entre outras. A Wikipédia funciona sobre um software inteiramente escrito em PHP, usando bases de dados MySQL: o MediaWiki.[6]
+
+PHP tem suporte aos protocolos: IMAP, SNMP, NNTP, POP3, HTTP, LDAP, XML-RPC, SOAP. É possível abrir sockets e interagir com outros protocolos. E as bibliotecas de terceiros expandem ainda mais estas funcionalidades. Existem iniciativas para utilizar o PHP como linguagem de programação de sistemas fixos. A mais notável é a PHP-GTK. Trata-se de um conjunto do PHP com a biblioteca GTK, portada do C++, fazendo assim softwares inter-operacionais entre Windows e Linux. Na prática, essa extensão tem sido muito pouco utilizada para projetos reais.[6]
+
+O acrônimo recursivo PHP representa um elefante, que é conhecido como o mascote da linguagem.
+
+Licença
+PHP é um software gratuito e de código aberto disponível sob a PHP License, que afirma:[7]
+Produtos derivados deste software não devem ser chamado de PHP, nem pode conter "PHP" em seu nome, sem prévia permissão por escrito da group@php.net. Você pode indicar que o software funciona em conjunto com o PHP, dizendo "Foo para PHP", em vez de chamá-lo "PHP Foo" ou "phpfoo".
+Esta restrição no uso do nome PHP torna-o incompatível com a GNU General Public License (GPL).[8]
+
+PHP 6 e Unicode
+PHP recebeu diversas críticas por não ter suporte nativo a Unicode.[9][10] Em 2005, um projeto liderado por Andrei Zmievski foi iniciado para trazer esse dito suporte ao PHP através da incorporação da biblioteca International Components for Unicode (ICU) para poder passar-se a usar a codificação UTF-16.[11] Uma vez que isso causaria grandes mudanças tanto no código fonte como para o usuário, foi planejado lançá-la na versão 6.0 em conjunto com outros importantes recursos, então em desenvolvimento, em vez da 5.5.[12]
+
+Entretanto, devido a falta de desenvolvedores que entendessem as mudanças necessárias e problemas de desempenho decorrentes da conversão para UTF-16, que raramente é usado em um contexto web, levou a atrasos no projeto. Como resultado, o PHP 5.3 foi lançado em 2009, sem total suporte ao Unicode, mas contendo algumas das novidades que seriam lançadas no PHP 6.0. Em março de 2010, o projeto em sua forma atual foi oficialmente abandonado, e uma versão 5.4 do PHP foi feita ainda sem total suporte a Unicode, também contendo as novidades que seriam lançadas no PHP 6.0.[13] Esperanças iniciais eram de que um novo plano seria formado para ter a integração Unicode, mas a partir de 2014 nenhum foi adotado.
+
+Durante os anos, antes do lançamento do PHP 5.3 e 5.4, alguns livros foram publicados com base no conjunto de recursos esperado de PHP 6.0, incluindo o suporte a Unicode e os recursos que depois foram trazidos para outros lançamentos. Há, portanto, algum debate sobre se uma nova versão principal do PHP, com ou sem suporte a Unicode, deve ser chamado de "PHP 6", ou se a nomenclatura deve ser ignorado para evitar confusão.
+
+Histórico de versões
+Versão	Data de lançamento original	Última versão	Suportada até[14][15]	Notas
+1.0	8 de junho de 1995	?	?	Oficialmente chamado de "Personal Home Page Tools (PHP Tools)" (Ferramentas para página pessoal). Este foi o primeiro uso para o nome "PHP".
+2.0	1 de novembro de 1997	?	?	Considerado pelo seu criador como a "mais rápida e simples ferramenta" para criar páginas dinâmicas para a Web.
+3.0	6 de junho de 1998	3.0.18	20 de outubro de 2000	O desenvolvimento passou a ser feito por vários desenvolvedores em colaboração. Zeev Suraski e Andi Gutmans reescreveram toda a base do PHP nesta versão.
+4.0	22 de maio de 2000	4.0.6	23 de junho de 2001	Foi adicionado um melhor sistema de análise sintática (parser) chamado de motor Zend (Zend engine).[16]
+4.1	10 de dezembro de 2001	4.1.2	12 de março de 2002	Introduzidas as 'superglobais' ($_GET, $_POST, $_SESSION, etc.)[16]
+4.2	22 de abril de 2002	4.2.3	6 de setembro de 2002	A register_globals passou agora a estar desativada por padrão. Dados recebidos via rede são mais inseridos no escopo de variável global, fechando possíveis brechas de segurança.[16]
+4.3	27 de dezembro de 2002	4.3.11	31 de março de 2005	Introduziu sua interface de linha de comando (command-line interface - CLI), para complementar o CGI.[16][17]
+4.4	11 de julho de 2005	4.4.9	7 de agosto de 2008	Adicionadas as páginas do manual para os scripts phpize e php-config.[16]
+5.0	13 de julho de 2004	5.0.5	5 de setembro de 2005	Zend Engine II com um novo modelo de objeto.[18]
+5.1	24 de novembro de 2005	5.1.6	24 de agosto de 2006	Melhorias na performance com a introdução de variáveis de compilação na reengenharia do motor PHP.[18] Adicionada biblioteca PHP Data Objects (PDO) como uma nova interface de acesso aos bancos de dados.[19][20]
+5.2	2 de novembro de 2006	5.2.17	6 de janeiro de 2011	Habilitado por padrão o filtro de extensões. Suporte ao JSON nativo.[18][21]
+5.3	30 de junho de 2009	5.3.29	14 de agosto de 2014	Suporte a espaço de nomes (namespace), vinculação de nomes (late static bindings), rótulos de salto de código (goto limitado), clausura nativa, arquivos PHP nativos (phar), coletor de lixo para referências circulares, suporte ao Windows melhorado, sqlite3, mysqlnd em substituição a libmysql como biblioteca de extensão de trabalho com MySQL, fileinfo em substituição ao mime_magic para um melhor suporte ao MIME, extensão de internacionalização, e descontinuidade da extensão ereg.[22]
+5.4	1 de março de 2012	5.4.45	3 de setembro de 2015	Suporte à trait, suporte a uma versão mais curta na sintaxe de vetores. Items removidos: register_globals, safe_mode, allow_call_time_pass_reference, session_register(), session_unregister() and session_is_registered(). Servidor web embutido.[23]. Várias melhorias nas fucionalidades já existentes e na performance. Redução dos requerimentos de memória.[24]
+5.5	20 de junho de 2013	5.5.38	21 de julho de 2016	Suporte para geradores, blocos finally para tratamento de exceções, OpCache (baseado em Zend Optimizer+) empacotado na distribuição oficial.[25]
+5.6	28 de agosto de 2014	5.6.40	31 de dezembro de 2018	Expressões escalares constantes, funções variádicas, desempacotamento de argumento, novo operador de exponenciação, extensões da instrução use para funções e constantes, novo 
